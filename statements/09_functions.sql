@@ -9,3 +9,6 @@ SELECT avg(age) AS average_age FROM users;
 
 /* Get the total rows from the 'users' table that have email */
 SELECT count(email) AS Total_users_with_email FROM users;
+
+/* Get the name and surname in one column from the 'users' */
+SELECT concat(name, ' ', surname) AS Full_name FROM users;
