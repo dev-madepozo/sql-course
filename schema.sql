@@ -32,4 +32,8 @@ VALUES
   ('Brayan', 'Morales', 31, '2013-12-24', 'brayanmorales@yahoo.es'),
   ('Piero', 'Carranza', 34, '2015-04-28', 'pierocarranza@outlook.com'),
   ('Martin', 'Fernandez', 30, '2016-07-29', 'martinfernandez@apple.com'),
-  ('Ismael', 'Perez', 25, '2016-12-21', 'ismaelperez@gmail.com');
+  ('Ismael', 'Perez', 25, '2016-12-21', NULL),
+  ('Rebeca', 'Guerra', 25, '2016-12-21', 'rebecaguerra@gmail.com'),
+  ('Steve', 'Torres', 25, '2016-12-21', NULL),
+  ('Edith', 'Smith', 25, '2016-12-21', NULL),
+  ('Dora', 'Palacias', 25, '2016-12-21', 'dorapalacios@gmail.com');
