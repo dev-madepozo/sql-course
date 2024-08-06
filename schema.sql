@@ -37,3 +37,26 @@ VALUES
   ('Steve', 'Torres', 25, '2016-12-21', NULL),
   ('Edith', 'Smith', 25, '2016-12-21', NULL),
   ('Dora', 'Palacias', 25, '2016-12-21', 'dorapalacios@gmail.com');
+
+
+-- Add a new column called country to the 'users' tables
+ALTER TABLE users ADD COLUMN (
+  country VARCHAR(25) NULL
+);
+
+/* Set the country value to the 'users' table based on some conditions */
+
+-- Set the country value to 'Peru' to the 'users' table where the name starts with the letter 'M'
+UPDATE users SET country = 'Peru' WHERE name LIKE 'M%';
+
+-- Set the country value to 'Argentina' to the 'users' table where the name starts with the letter 'P'
+UPDATE users SET country = 'Argentina' WHERE name LIKE 'P%';
+
+-- Set the country value to 'Brasil' to the 'users' table where the age is over 30 and does not yet have a country
+UPDATE users SET country = 'Brasil' WHERE age > 30 AND country IS NULL;
+
+-- Set the country value to 'Chile' to the 'users' table where the age is over 25 and under 30, does not yet have a country
+UPDATE users SET country = 'Chile' WHERE age BETWEEN 25 AND 30 AND country IS NULL;
+
+-- Set the country value to 'Colombia' to the 'users' table where the country is NULL
+UPDATE USERS SET country = 'Colombia' WHERE country IS NULL;
